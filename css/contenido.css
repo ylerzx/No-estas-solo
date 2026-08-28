@@ -1,0 +1,60 @@
+/* ===== SECCIONES GENERALES ===== */
+.section--alt{background:var(--blanco)}
+
+.card-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:24px}
+@media(min-width:640px){.card-grid{grid-template-columns:1fr 1fr}}
+
+.concepto-card{
+  background:var(--crema);border-radius:var(--radius-sm);
+  padding:22px;border-left:4px solid var(--amarillo);
+}
+.concepto-card h3{margin-bottom:.35em;font-size:1.1rem}
+.concepto-card p{color:var(--tinta-suave);font-size:.95rem;margin:0}
+
+/* ===== SEÑALES DE ALERTA ===== */
+.senales-list{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px}
+.senales-list li{
+  display:flex;gap:14px;align-items:flex-start;
+  background:var(--verde-suave);padding:16px 18px;border-radius:var(--radius-sm);
+}
+.senales-list__icon{
+  flex-shrink:0;width:28px;height:28px;border-radius:50%;
+  background:var(--verde);color:#fff;display:flex;align-items:center;
+  justify-content:center;font-weight:800;font-size:.85rem;
+}
+.senales-list p{margin:0;font-size:.95rem}
+.senales-list strong{display:block;margin-bottom:2px;font-family:var(--font-display)}
+
+/* ===== PROTOCOLO: TARJETAS POR ESCENARIO ===== */
+.escenarios{display:grid;grid-template-columns:1fr;gap:20px;margin-top:28px}
+@media(min-width:720px){.escenarios{grid-template-columns:1fr 1fr}}
+
+.escenario{
+  border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--sombra);background:var(--blanco);
+  border:2px solid transparent;
+}
+.escenario--urgente{border-color:var(--naranja)}
+.escenario--acompanar{border-color:var(--verde)}
+
+.escenario__head{
+  padding:20px 22px;color:#fff;
+}
+.escenario--urgente .escenario__head{background:var(--naranja)}
+.escenario--acompanar .escenario__head{background:var(--verde)}
+.escenario__head span{
+  font-size:.75rem;font-weight:800;text-transform:uppercase;
+  letter-spacing:.06em;opacity:.85;display:block;margin-bottom:4px;
+}
+.escenario__head h3{color:#fff;margin:0}
+
+.escenario__body{padding:20px 22px}
+.escenario__body ol{margin:0;padding-left:22px;display:grid;gap:12px}
+.escenario__body li{font-size:.95rem;padding-left:4px}
+.escenario__body li strong{font-family:var(--font-display);display:block;color:var(--tinta)}
+
+.aviso{
+  background:var(--amarillo-suave);border-radius:var(--radius-sm);
+  padding:16px 20px;margin-top:20px;font-size:.9rem;display:flex;gap:12px;
+}
+.aviso__icon{flex-shrink:0;font-size:1.3rem}

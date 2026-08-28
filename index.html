@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>No Estás Solo/a — Salud Mental y Prevención del Suicidio</title>
+<meta name="description" content="Información clara sobre salud mental, señales de alerta, cómo ayudar a alguien en crisis y líneas de ayuda en Panamá y la región.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/crisis.css">
+<link rel="stylesheet" href="css/contenido.css">
+<link rel="stylesheet" href="css/quiz.css">
+<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+<a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+<!-- BANNER DE CRISIS FIJO -->
+<div class="crisis-bar" id="crisis-bar">
+  <div class="crisis-bar__inner">
+    <span class="crisis-bar__text">
+      <span class="crisis-bar__dot" aria-hidden="true"></span>
+      ¿Estás en crisis ahora? No estás solo/a.
+    </span>
+    <div class="crisis-bar__actions">
+      <a href="tel:147" class="crisis-bar__call">📞 Línea 147 · Panamá 24h</a>
+      <button type="button" class="crisis-bar__close" id="crisis-bar-close" aria-label="Cerrar aviso de ayuda">✕</button>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="crisis-bar-reopen" id="crisis-bar-reopen" hidden aria-label="Mostrar aviso de ayuda en crisis">
+  <span class="crisis-bar-reopen__dot" aria-hidden="true"></span>
+  Ayuda
+</button>
+
+<header class="hero">
+  <div class="hero__blob" aria-hidden="true"></div>
+  <div class="container hero__content">
+    <span class="eyebrow">Salud mental y prevención</span>
+    <h1 class="hero__title">Hablar de esto <em>salva vidas</em></h1>
+    <p class="hero__lead">
+      Esta guía reúne información clara sobre salud mental, señales de alerta y cómo actuar
+      si vos o alguien cercano está pasando por un momento difícil. Leerla ya es un paso.
+    </p>
+    <div class="hero__actions">
+      <a href="#directorio" class="btn btn-primary">Ver líneas de ayuda</a>
+      <a href="#protocolo" class="btn btn-outline">Cómo ayudar a alguien</a>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-tabs container" aria-label="Secciones de la página">
+  <a href="#conceptos">Conceptos clave</a>
+  <a href="#senales">Señales de alerta</a>
+  <a href="#protocolo">Cómo actuar</a>
+  <a href="#directorio">Líneas de ayuda</a>
+  <a href="#quiz">Quiz</a>
+</nav>
+
+<main id="contenido">
+
+  <!-- CONCEPTOS CLAVE -->
+  <section class="section" id="conceptos">
+    <div class="container">
+      <span class="eyebrow">Para entender mejor</span>
+      <h2>Conceptos clave</h2>
+      <p>Antes de saber cómo actuar, ayuda entender algunas ideas básicas sobre salud mental y suicidio.</p>
+
+      <div class="card-grid">
+        <div class="concepto-card">
+          <h3>La salud mental es parte de la salud</h3>
+          <p>Así como cuidamos el cuerpo, la mente también necesita atención. Sentirse mal emocionalmente de forma persistente no es "debilidad": es una señal de que algo necesita cuidado.</p>
+        </div>
+        <div class="concepto-card">
+          <h3>El suicidio es prevenible</h3>
+          <p>En la gran mayoría de los casos, la ideación suicida es temporal, aunque el dolor se sienta permanente. Con apoyo adecuado y a tiempo, la crisis puede pasar.</p>
+        </div>
+        <div class="concepto-card">
+          <h3>Preguntar no "planta la idea"</h3>
+          <p>Preguntarle directamente a alguien si está pensando en hacerse daño no aumenta el riesgo. Al contrario: suele aliviar, porque la persona siente que puede hablarlo sin juicio.</p>
+        </div>
+        <div class="concepto-card">
+          <h3>No es un acto de "egoísmo"</h3>
+          <p>La ideación suicida suele venir de un dolor psicológico insoportable, no de falta de voluntad ni de consideración hacia otros. Entender esto ayuda a acompañar sin culpar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÑALES DE ALERTA -->
+  <section class="section section--alt" id="senales">
+    <div class="container">
+      <span class="eyebrow">Aprender a notar</span>
+      <h2>Señales de alerta temprana</h2>
+      <p>Ninguna señal por sí sola confirma un riesgo, pero varias juntas —o un cambio brusco— merecen atención y una conversación cercana.</p>
+
+      <ul class="senales-list">
+        <li>
+          <span class="senales-list__icon" aria-hidden="true">1</span>
+          <p><strong>Hablar sobre morir o desaparecer</strong> Comentarios como "sería mejor no existir" o "ya no aguanto más", directos o en broma.</p>
+        </li>
+        <li>
+          <span class="senales-list__icon" aria-hidden="true">2</span>
+          <p><strong>Despedidas inusuales</strong> Regalar pertenencias valiosas, "poner en orden" asuntos personales, despedirse sin motivo claro.</p>
+        </li>
+        <li>
+          <span class="senales-list__icon" aria-hidden="true">3</span>
+          <p><strong>Aislamiento repentino</strong> Alejarse de amistades, familia o actividades que antes disfrutaba, sin explicación.</p>
+        </li>
+        <li>
+          <span class="senales-list__icon" aria-hidden="true">4</span>
+          <p><strong>Cambios bruscos de ánimo</strong> Tristeza profunda, irritabilidad constante, o una calma repentina después de un periodo de mucha angustia.</p>
+        </li>
+        <li>
+          <span class="senales-list__icon" aria-hidden="true">5</span>
+          <p><strong>Alteraciones de sueño y apetito</strong> Dormir mucho más o mucho menos de lo habitual; comer en exceso o dejar de comer.</p>
+        </li>
+        <li>
+          <span class="senales-list__icon" aria-hidden="true">6</span>
+          <p><strong>Buscar métodos o acceso</strong> Investigar formas de hacerse daño, o buscar acceso a medios como medicamentos o armas.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROTOCOLO DE AYUDA -->
+  <section class="section" id="protocolo">
+    <div class="container">
+      <span class="eyebrow">Cómo actuar</span>
+      <h2>Protocolo de ayuda</h2>
+      <p>Lo que hagas en los primeros minutos importa. Elegí el escenario que más se parece a tu situación:</p>
+
+      <div class="escenarios">
+        <article class="escenario escenario--urgente">
+          <div class="escenario__head">
+            <span>Peligro inmediato</span>
+            <h3>Si ya tiene un método a la mano o el riesgo es ahora</h3>
+          </div>
+          <div class="escenario__body">
+            <ol>
+              <li><strong>No la dejes sola.</strong> Quedate con la persona o pedile a alguien de confianza que lo haga.</li>
+              <li><strong>Llamá al 911</strong> de inmediato, o llevala a una sala de emergencias.</li>
+              <li><strong>Alejá objetos de riesgo</strong> si es seguro hacerlo, sin discutir ni forcejear.</li>
+              <li><strong>Mantené la calma</strong> en tu voz y lenguaje corporal; no la sermonees ni la culpes.</li>
+              <li><strong>Avisá a un familiar</strong> o persona cercana de confianza en cuanto puedas.</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="escenario escenario--acompanar">
+          <div class="escenario__head">
+            <span>Señales, sin urgencia</span>
+            <h3>Si notás señales pero no hay riesgo inmediato</h3>
+          </div>
+          <div class="escenario__body">
+            <ol>
+              <li><strong>Preguntá directamente.</strong> "¿Has pensado en hacerte daño?" No aumenta el riesgo, y muestra que te importa.</li>
+              <li><strong>Escuchá sin juzgar.</strong> No minimices ("eso no es para tanto") ni des soluciones rápidas.</li>
+              <li><strong>Validá lo que siente.</strong> "Tiene sentido que te sientas así" ayuda más que "todo va a estar bien".</li>
+              <li><strong>Animala a buscar ayuda profesional</strong> y ofrecele acompañarla a la primera llamada o cita.</li>
+              <li><strong>Mantené el contacto</strong> en los días siguientes: una llamada o mensaje corto puede sostener mucho.</li>
+            </ol>
+          </div>
+        </article>
+      </div>
+
+      <div class="aviso">
+        <span class="aviso__icon" aria-hidden="true">💡</span>
+        <p><strong>Cuidate también a vos.</strong> Acompañar a alguien en crisis puede ser agotador. Buscar apoyo profesional para vos mismo/a no es egoísmo, es sostenible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIRECTORIO -->
+  <section class="section" id="directorio">
+    <div class="directorio">
+      <div class="container" style="padding:44px 20px">
+        <span class="eyebrow">Ayuda real, ahora</span>
+        <h2>Líneas de ayuda</h2>
+        <p class="directorio__lead">Números gratuitos y confidenciales en Panamá y países cercanos. Guardalos o compartilos con alguien que puedan necesitarlos.</p>
+
+        <div class="directorio__grid">
+          <div class="linea-card linea-card--destacada">
+            <div>
+              <span class="linea-card__pais">Panamá · Nacional</span>
+              <div class="linea-card__nombre">Línea 147 "Tu Vida Importa"</div>
+              <div class="linea-card__numero">147</div>
+            </div>
+            <a href="tel:147" class="linea-card__llamar">Llamar ahora</a>
+          </div>
+
+          <div class="linea-card">
+            <span class="linea-card__pais">Panamá · Emergencias</span>
+            <div class="linea-card__nombre">Sistema Nacional de Emergencias (SINAPROC)</div>
+            <a href="tel:911" class="linea-card__link"><div class="linea-card__numero">911</div></a>
+          </div>
+
+          <div class="linea-card">
+            <span class="linea-card__pais">Costa Rica</span>
+            <div class="linea-card__nombre">Aquí Estoy — Colegio de Psicólogos</div>
+            <a href="tel:8002737869" class="linea-card__link"><div class="linea-card__numero">800‑AQESTOY</div></a>
+          </div>
+
+          <div class="linea-card">
+            <span class="linea-card__pais">Colombia</span>
+            <div class="linea-card__nombre">Línea Nacional de Prevención del Suicidio</div>
+            <a href="tel:192" class="linea-card__link"><div class="linea-card__numero">192, opción 4</div></a>
+          </div>
+
+          <div class="linea-card">
+            <span class="linea-card__pais">México</span>
+            <div class="linea-card__nombre">Línea de la Vida (CONASAMA)</div>
+            <a href="tel:8009112000" class="linea-card__link"><div class="linea-card__numero">800‑911‑2000</div></a>
+          </div>
+        </div>
+
+        <p class="directorio__intl">
+          ¿Estás en otro país? <a href="https://findahelpline.com/es-ES" target="_blank" rel="noopener">Find A Helpline</a>
+          y <a href="https://www.befrienders.org/" target="_blank" rel="noopener">Befrienders Worldwide</a>
+          reúnen líneas de ayuda verificadas de más de 130 países.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="section" id="quiz">
+    <div class="quiz">
+      <div class="container" style="padding:44px 20px 48px">
+        <span class="eyebrow">Pon a prueba lo aprendido</span>
+        <h2>Quiz rápido</h2>
+        <p class="quiz__lead">Responde estas preguntas basadas en lo que acabas de leer. Cada respuesta te muestra al instante si acertaste.</p>
+
+        <div class="quiz__progress-wrap">
+          <div class="quiz__progress-label" id="quiz-progress-label">Pregunta 1 de 8</div>
+          <div class="quiz__progress-track">
+            <div class="quiz__progress-fill" id="quiz-progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="quiz__stage" id="quiz-stage" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__logo">No Estás Solo/a</div>
+    <p>Este sitio ofrece información general y no reemplaza atención profesional. Si estás en crisis, comunicate con una línea de ayuda o los servicios de emergencia de tu país.</p>
+  </div>
+</footer>
+
+<script src="js/quiz-data.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/crisis-bar.js"></script>
+</body>
+</html>
